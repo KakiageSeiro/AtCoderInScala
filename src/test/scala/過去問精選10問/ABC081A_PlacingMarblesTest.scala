@@ -13,13 +13,13 @@ class ABC081A_PlacingMarblesTest extends AnyFlatSpec with Diagrams with TimeLimi
     System.setIn(new ByteArrayInputStream(str.getBytes(StandardCharsets.UTF_8)))
   }
 
-  "1" should "偶数" in {
+  "問題ページの入力例" should "1" in {
     input("101")
     val result = ABC081A_PlacingMarbles.run()
     assert(result == "2")
   }
 
-  "2" should "奇数" in {
+  "問題ページの入力例" should "2" in {
     input("000")
     val result = ABC081A_PlacingMarbles.run()
     assert(result == "0")
