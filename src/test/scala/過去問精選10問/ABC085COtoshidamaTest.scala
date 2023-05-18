@@ -8,7 +8,8 @@ import java.io.ByteArrayInputStream
 import java.nio.charset.StandardCharsets
 
 class ABC085COtoshidamaTest extends AnyFlatSpec with Diagrams with TimeLimits {
-  val 問題1期待値 = "4 0 5"
+  // val 問題1期待値 = "4 0 5"
+  val 問題1期待値 = "0 9 0"
   val 問題1input =
     """
     9 45000
@@ -20,7 +21,8 @@ class ABC085COtoshidamaTest extends AnyFlatSpec with Diagrams with TimeLimits {
     20 196000
     """
   // -----------------------------------------------------------------
-  val 問題3期待値 = "14 27 959"
+//  "(2,54,944) (6,45,949) (10,36,954) (14,27,959) (18,18,964) (22,9,969) (26,0,974)"がありうる
+  val 問題3期待値 = "2 54 944"
   val 問題3input =
     """
     1000 1234000
@@ -61,6 +63,6 @@ class ABC085COtoshidamaTest extends AnyFlatSpec with Diagrams with TimeLimits {
   }
 
   private def run(): String = {
-    ABC085BKagamiMochi.run()
+    ABC085COtoshidama.run()
   }
 }
