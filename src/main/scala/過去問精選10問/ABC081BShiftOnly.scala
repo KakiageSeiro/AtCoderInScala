@@ -1,5 +1,7 @@
 package 過去問精選10問
 
+import scala.annotation.tailrec
+
 object ABC081BShiftOnly {
   def run(): String = {
     val sc = new java.util.Scanner(System.in)
@@ -9,6 +11,7 @@ object ABC081BShiftOnly {
     go(list.toList, 0).toString
   }
 
+  @tailrec
   def go(list: List[Int], count: Int): Int = {
     if (list.exists(_ % 2 != 0)) return count
 
