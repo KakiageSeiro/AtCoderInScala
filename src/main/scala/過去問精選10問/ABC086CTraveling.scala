@@ -1,11 +1,7 @@
+package 過去問精選10問
 
-
-object Main {
-  def main(args: Array[String]): Unit = {
-    println(run())
-  }
-
-  def run(): String = { // ■■■■■■■■■■■■■■■■■■■■■■■■■
+object ABC086CTraveling {
+  def run(): String = {
     val sc = new java.util.Scanner(System.in)
     val n = sc.nextInt()
     val plans = List.fill(n) {
